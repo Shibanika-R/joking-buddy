@@ -1,0 +1,15 @@
+{
+  "name": "jokingbuddy",
+  "version": "1.0.0",
+  "description": "Random joke for you",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon index.js"
+  },
+  "author": "shibu",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "give-me-a-joke": "^0.5.1"
+  }
+}
