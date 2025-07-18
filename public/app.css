@@ -1,0 +1,103 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #fefcea, #f1da36);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  text-align: center;
+  padding: 30px;
+  max-width: 600px;
+  background: #fff8d4;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+#getJokeBtn {
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  background-color: #f3b400;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#getJokeBtn:hover {
+  background-color: #e0a800;
+  transform: scale(1.05);
+}
+
+#jokeBox {
+  margin: 25px auto;
+  padding: 20px;
+  font-size: 1.2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  min-height: 80px;
+}
+
+.reactions {
+  margin-top: 20px;
+}
+
+.react {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #eee;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.react:hover {
+  background-color: #ddd;
+}
+
+footer {
+  margin-top: 30px;
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.toast {
+  visibility: hidden;
+  min-width: 200px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 12px 20px;
+  border-radius: 8px;
+  position: fixed;
+  z-index: 1000;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.95rem;
+  opacity: 0;
+  transition: opacity 0.3s ease, bottom 0.3s ease;
+}
+
+.toast.show {
+  visibility: visible;
+  opacity: 1;
+  bottom: 40px;
+}
